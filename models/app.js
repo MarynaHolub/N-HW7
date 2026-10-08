@@ -11,11 +11,11 @@ const App = sequelize.define(
     },
     name: {
       type: DataTypes.STRING,
-      allowNull: true, // Поле обязательно для заполнения
+      allowNull: false, // Поле обязательно для заполнения
     },
     size: {
       type: DataTypes.FLOAT, // могут быть дробные
-      allowNull: true,
+      allowNull: false,
     },
   },
   {

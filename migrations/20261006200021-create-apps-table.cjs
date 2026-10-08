@@ -17,11 +17,11 @@ module.exports = {
           },
           name: {
             type: Sequelize.STRING,
-            allowNull: true, // Поле обязательно для заполнения
+            allowNull: false, // Поле обязательно для заполнения
           },
           size: {
             type: Sequelize.FLOAT, // могут быть дробные
-            allowNull: true,
+            allowNull: false,
           },
     });
   },
